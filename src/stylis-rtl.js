@@ -18,8 +18,15 @@ export type StylisContextType = $Values<typeof STYLIS_CONTEXTS>;
 // (they are not present at the PROPERTY, SELECTOR_BLOCK, or POST_PROCESS steps)
 export const STYLIS_PROPERTY_CONTEXT = STYLIS_CONTEXTS.PREPARATION;
 
-export default (context: StylisContextType, content: string): ?string => {
+function stylisRTLPlugin(context: StylisContextType, content: string): ?string {
   if (context === STYLIS_PROPERTY_CONTEXT) {
     return cssjanus.transform(content);
   }
-};
+}
+
+// stable identifier that will not be dropped by minification unless the whole module
+// is unused
+/*#__PURE__*/
+Object.defineProperty(stylisRTLPlugin, "name", { value: "stylisRTLPlugin" });
+
+export default stylisRTLPlugin;
