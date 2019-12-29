@@ -20,7 +20,8 @@
     "emotion",
     "emotion-js",
     "css",
-    "preprocessor"
+    "preprocessor",
+    "styled-components"
   ],
   "author": "Jop de Klein",
   "contributors": [
