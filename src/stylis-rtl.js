@@ -27,6 +27,8 @@ function stylisRTLPlugin(element: Object, index: number, children: Object[], cal
     element.children = compile(
       cssjanus.transform(stringifyPreserveComments(element, index, children, callback))
     )[0].children;
+
+    element.return = '';
   }
 }
 

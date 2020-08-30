@@ -1,8 +1,9 @@
 // @flow
-import { compile, middleware, serialize, stringify } from 'stylis';
+import { compile, middleware, prefixer, serialize, stringify } from 'stylis';
 import stylisRtlPlugin from './stylis-rtl';
 
-const stylis = (css) => serialize(compile(css), middleware([stylisRtlPlugin, stringify]));
+const stylis = (css, extraPlugins = []) =>
+  serialize(compile(css), middleware([stylisRtlPlugin, ...extraPlugins, stringify]));
 
 describe('integration test with stylis', () => {
   it('flips simple rules', () => {
@@ -70,6 +71,21 @@ describe('integration test with stylis', () => {
       )
     ).toMatchInlineSnapshot(
       `"@media (min-width: 500px){.a{padding-right:5px;margin-left:5px;border-right:1px solid red;}}"`
+    );
+  });
+
+  it('works in tandem with prefixer', () => {
+    expect(
+      stylis(
+        `@keyframes a {
+          0% { left: 0px; }
+          100% { left: 100px; }
+        }
+      `,
+        [prefixer]
+      )
+    ).toMatchInlineSnapshot(
+      `"@-webkit-keyframes a{0%{right:0px;}100%{right:100px;}}@keyframes a{0%{right:0px;}100%{right:100px;}}"`
     );
   });
 });
