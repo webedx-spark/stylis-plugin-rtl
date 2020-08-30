@@ -54,6 +54,6 @@
     "stylis": "^4.0.2"
   },
   "dependencies": {
-    "cssjanus": "^1.3.0"
+    "cssjanus": "^2.0.1"
   }
 }

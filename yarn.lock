@@ -2006,10 +2006,10 @@ crypt@~0.0.1:
   resolved "https://registry.yarnpkg.com/crypt/-/crypt-0.0.2.tgz#88d7ff7ec0dfb86f713dc87bbb42d044d3e6c41b"
   integrity sha1-iNf/fsDfuG9xPch7u0LQRNPmxBs=
 
-cssjanus@^1.3.0:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/cssjanus/-/cssjanus-1.3.2.tgz#7c23d39be92f63e1557a75c015f61d95009bd6b3"
-  integrity sha512-5pM/C1MIfoqhXa7k9PqSnrjj1SSZDakfyB1DZhdYyJoDUH+evGbsUg6/bpQapTJeSnYaj0rdzPUMeM33CvB0vw==
+cssjanus@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/cssjanus/-/cssjanus-2.0.1.tgz#e0fe6e805b3ad960245a5ab81295609480d040dd"
+  integrity sha512-jYvhjWiID0AVlHHcmk1cOycfAjVCbx4oIsjgvw4VdpqBfxy2IaqIRm66cA4xqqKzQWmdTdzevUusdL8TO+FR9g==
 
 cssom@^0.4.4:
   version "0.4.4"
