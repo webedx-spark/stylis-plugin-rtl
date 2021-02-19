@@ -1,3 +1,5 @@
+> Note: This is fork of https://github.com/styled-components/stylis-plugin-rtl/pull/21/commits/5aed8355ad001d15ff1550b56a80e93932dc3555. Remove after the PR gets merged.
+
 # stylis-plugin-rtl
 
 Stylis RTL plugin based on CSSJanus
@@ -39,9 +41,10 @@ function MakeItRTL() {
 
 #### NOTE: Preventing flipping
 
-Because minification removes all comments from your CSS before it passes to `<StyleSheetManager>`, `/* @noflip */` comment won't work. 
+Because minification removes all comments from your CSS before it passes to `<StyleSheetManager>`, `/* @noflip */` comment won't work.
 You will have to either:
-- add an exclamation mark at the beginning of the comment, like this  `/*! @noflip */`, to prevent it from being removed
+
+- add an exclamation mark at the beginning of the comment, like this `/*! @noflip */`, to prevent it from being removed
 - disable minification entirely by setting `minify` to `false` in `.babelrc` (see [styled-components documentation](https://styled-components.com/docs/tooling#minification)).
 
 <small>This is a fork of `stylis-rtl` for use with styled-components v5+</small>

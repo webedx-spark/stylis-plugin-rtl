@@ -1,7 +1,7 @@
 {
-  "name": "stylis-plugin-rtl",
+  "name": "@coursera/stylis-plugin-rtl",
   "version": "2.0.1",
-  "description": "Fork of stylis-rtl, uses cssjanus under the hood to flip style orientations for RTL",
+  "description": "Fork of styled-components/stylis-plugin-rtl with https://github.com/styled-components/stylis-plugin-rtl/pull/21/commits/5aed8355ad001d15ff1550b56a80e93932dc3555 applied",
   "main": "dist/stylis-rtl.js",
   "types": "types/stylis-rtl.d.ts",
   "scripts": {
@@ -55,5 +55,8 @@
   },
   "dependencies": {
     "cssjanus": "^2.0.1"
+  },
+  "publishConfig": {
+    "registry": "https://artifactory.dkandu.me/artifactory/api/npm/coursera-npm-packages"
   }
 }
