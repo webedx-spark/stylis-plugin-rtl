@@ -1,4 +1,4 @@
-> Note: This is fork of https://github.com/styled-components/stylis-plugin-rtl/pull/21/commits/5aed8355ad001d15ff1550b56a80e93932dc3555. Remove after the PR gets merged.
+> Note: This is a fork of https://github.com/styled-components/stylis-plugin-rtl/pull/21/commits/5aed8355ad001d15ff1550b56a80e93932dc3555. Remove this package after the referenced PR gets merged.
 
 # stylis-plugin-rtl
 
